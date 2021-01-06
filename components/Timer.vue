@@ -8,25 +8,25 @@
         <div
           class="w-20 h-20 border-4 border-gray-200 rounded-full flex justify-center items-center"
         >
-          <div class="cursor-pointer">
-            <div v-if="sound === null">
-              <font-awesome-icon
-                v-if="!active"
-                :icon="['fas', 'play']"
-                @click="start()"
-              />
-              <font-awesome-icon
-                v-else
-                :icon="['fas', 'pause']"
-                @click="pause()"
-              />
-            </div>
+          <div v-if="sound === null">
+            <font-awesome-icon
+              v-if="!active"
+              :icon="['fas', 'play']"
+              class="cursor-pointer"
+              @click="start()"
+            />
             <font-awesome-icon
               v-else
-              :icon="['fas', 'volume-mute']"
-              class="text-red-600"
+              :icon="['fas', 'pause']"
+              class="cursor-pointer"
+              @click="pause()"
             />
           </div>
+          <font-awesome-icon
+            v-else
+            :icon="['fas', 'volume-mute']"
+            class="text-red-600 cursor-pointer"
+          />
         </div>
       </div>
       <div class="flex gap-4 items-center">
