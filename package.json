@@ -10,6 +10,7 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
+    "fix": "yarn lint:js --fix && yarn lint:style --fix",
     "test": "jest"
   },
   "lint-staged": {
@@ -23,9 +24,12 @@
     }
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/google-fonts": "^1.2.0",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "nuxt-fontawesome": "^0.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
