@@ -1,7 +1,6 @@
 <template>
   <div
-    class="relative border rounded shadow px-4 py-2 m-4 text-gray-700"
-    style="width: 16rem; height: 8rem"
+    class="relative border rounded shadow px-4 py-2 m-4 text-gray-700 w-64 h-32"
     @click="stop()"
   >
     <div class="flex gap-4 h-full">
