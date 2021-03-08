@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@nuxt/typescript-runtime": "^2.0.2",
+    "@nuxt/typescript-runtime": "^2.1.0",
     "@nuxtjs/google-fonts": "^1.2.0",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.2",
